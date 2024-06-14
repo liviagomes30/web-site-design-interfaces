@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design de Interface: Aspectos Visuais</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <div class="logo">
+            <img src="/imgs/logo-fipp.png" alt="Logo FIPP" />
+          </div>
+          <li><a href="#introducao" class="scroll-link">Introdução</a></li>
+          <li>
+            <a href="#linguagens" class="scroll-link">Linguagens de Comandos</a>
+          </li>
+          <li>
+            <a href="#interfaces" class="scroll-link"
+              >Interfaces Gráficas do Usuário</a
+            >
+          </li>
+          <li><a href="#diretrizes" class="scroll-link">Diretrizes</a></li>
+          <li>
+            <a href="#visualizacao" class="scroll-link"
+              >Visualização de Dados</a
+            >
+          </li>
+          <li><a href="#conclusao" class="scroll-link">Conclusão</a></li>
+          <li><a href="#referencias" class="scroll-link">Referências</a></li>
+        </ul>
+        <div class="progress-bar"></div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <main>
+        <h1>Design de Interface: Aspectos Visuais</h1>
+        <p class="sub-txt">
+          O design da interface, que faz a mediação da interação das pessoas com
+          os dispositivos, é uma característica crucial do design de interação
+          como um todo. Ela é frequentemente chamada de interface do usuário
+          (IU) e consiste de tudo o que há no sistema com o qual as pessoas
+          entram em contato, seja física, perceptiva ou conceitualmente.
+        </p>
+        <div class="img-inicial">
+          <img src="./imgs/ui.jpg" alt="Ilustrativa" />
+        </div>
+        <section id="introducao">
+          <p>
+            As pessoas interagem com sistemas por meio dos sentidos,
+            especialmente a <em>visão, audição e tato</em>. O design de
+            interface deve assegurar que os elementos visuais, como botões,
+            sejam suficientemente grandes e claramente identificáveis,
+            proporcionando instruções claras para orientar os usuários. A
+            apresentação de informações deve ser cuidadosamente planejada para
+            que os usuários possam facilmente perceber e entender as relações
+            entre os dados.
+          </p>
+          <p>
+            Além disso, a interação com sistemas também depende do conhecimento
+            do usuário sobre as capacidades e funcionamento do dispositivo. As
+            pessoas utilizam modelos mentais para navegar, identificar comandos,
+            acessar dados e focar em detalhes específicos. A união dos aspectos
+            físicos, perceptivos e conceituais no design de interface visa criar
+            uma <em>experiência intuitiva</em>, permitindo que os usuários
+            compreendam e utilizem o sistema eficientemente, formando intenções
+            baseadas no entendimento do que o sistema pode fazer e como alcançar
+            seus objetivos.
+          </p>
+        </section>
+        <section id="linguagens">
+          <h2>Linguagens de Comandos</h2>
+          <p>
+            O sistema operacional (OS) é a interface que permite o acesso às
+            funções básicas de um computador ou dispositivo. A maioria dos
+            computadores pessoais utiliza
+            <em>interfaces gráficas do usuário</em> (GUIs), com variações do
+            Windows da Microsoft predominando no mercado. Contudo, muitos
+            computadores, especialmente servidores de internet, rede ou banco de
+            dados, usam o <em>sistema Unix</em>.
+          </p>
+          <p>
+            Unix é um sistema operacional antigo e robusto, com variantes
+            populares como Linux e BSD, e apesar de frequentemente possuir uma
+            GUI, é fundamentalmente baseado em <em>comandos</em>. Uma linguagem
+            de comando consiste em um conjunto de palavras com uma sintaxe
+            específica. Unix, por exemplo, possui uma vasta gama de comandos,
+            muitos dos quais podem parecer obscuros para usuários não
+            familiarizados.
+          </p>
+
+          <p>
+            Comandos em Unix, como grep, exemplificam a complexidade dessas
+            linguagens de comando. Grep permite buscas complexas usando
+            expressões regulares, que podem ser básicas ou estendidas. A
+            utilização de argumentos como grep -r amplia suas funcionalidades,
+            mas a curva de aprendizado pode ser íngreme. Essas ferramentas
+            poderosas frequentemente <em>sacrificam a facilidade</em> de uso em
+            prol de suas capacidades avançadas, destacando a importância de
+            conhecer o <em>público-alvo</em> ao projetar interfaces.
+          </p>
+          <table>
+            <tbody>
+              <tr>
+                <td>a2p</td>
+                <td>aclocal</td>
+                <td>aclocal-1.6</td>
+                <td>addftinfo</td>
+              </tr>
+              <tr>
+                <td>addr</td>
+                <td>aexml</td>
+                <td>afmtodit</td>
+                <td>appleping</td>
+              </tr>
+              <tr>
+                <td>appletviewer</td>
+                <td>apply</td>
+                <td>apropos</td>
+                <td>arch</td>
+              </tr>
+              <tr>
+                <td>at</td>
+                <td>at_cho_prn</td>
+                <td>atlookup</td>
+                <td>atprint</td>
+              </tr>
+              <tr>
+                <td>atq</td>
+                <td>atrm</td>
+                <td>atstatus</td>
+                <td>automake</td>
+              </tr>
+              <tr>
+                <td>automake</td>
+                <td>awk</td>
+                <td>b2m</td>
+                <td>banner</td>
+              </tr>
+              <tr>
+                <td>basename</td>
+                <td>bashbug</td>
+                <td>batch</td>
+                <td>bc</td>
+              </tr>
+              <tr>
+                <td>biff</td>
+                <td>bunzip2</td>
+                <td>bzcat</td>
+                <td>bzcmp</td>
+              </tr>
+              <tr>
+                <td>bzdiff</td>
+                <td>bzegrep</td>
+                <td>bzfgrep</td>
+                <td>bzgrep</td>
+              </tr>
+              <tr>
+                <td>bzip2</td>
+                <td>bzip2recover</td>
+                <td>bzless</td>
+                <td>bzmore</td>
+              </tr>
+              <tr>
+                <td>c2ph</td>
+                <td>c_rehash</td>
+                <td>cal</td>
+                <td>calendar</td>
+              </tr>
+              <tr>
+                <td>cancel</td>
+                <td>cap_mkdb</td>
+                <td>captoinfo</td>
+                <td>certtool</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="4">
+                  Alguns dos comandos disponíveis para BSD Unix
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+          <p>
+            Antes do Windows, o sistema operacional MSDOS dominava os
+            computadores pessoais, utilizando um prompt de comando como
+            interface principal. Os usuários precisavam memorizar e digitar
+            comandos, como dir para listar diretórios. Embora desafiadoras, as
+            linguagens de comando não são intrinsecamente ruins; elas são
+            rápidas e eficazes para usuários familiarizados com os comandos, e a
+            possibilidade de comandos falados oferece uma interface conveniente
+            para situações como sistemas em carros. Comandos específicos, como
+            os do Google, exemplificam sua utilidade em buscas especializadas.
+          </p>
+        </section>
+        <section id="interfaces">
+          <h2>Interfaces Gráficas do Usuário</h2>
+          <p>
+            As Interfaces Gráficas do Usuário (GUIs), presentes em computadores
+            pessoais, smartphones e dispositivos com touchscreen, têm uma
+            história que remonta ao trabalho pioneiro do PARC da Xerox,
+            influenciando tanto o Windows da Microsoft quanto o Macintosh da
+            Apple. Durante as décadas de 1980 e 1990, diversos designs de GUIs
+            surgiram, mas gradualmente o Windows e o Macintosh dominaram o
+            mercado de sistemas operacionais GUI. Atualmente, o Google Chrome OS
+            surge como um potencial desafiante para essa hegemonia.
+          </p>
+          <h3>WIMP</h3>
+          <p>
+            WIMP, acrônimo para janelas, ícones, menus e apontadores, representa
+            a base das GUIs predominantes, como aquelas presentes no Windows e
+            no Mac OS. Originado na Xerox por David Canfield Smith em 1975, este
+            modelo de interface revolucionou a interação computacional.
+          </p>
+          <p>
+            Composto por elementos como janelas para compartilhar recursos
+            visuais, ícones para representar arquivos e dispositivos, menus para
+            seleção de comandos e apontadores como o mouse, o WIMP adota a
+            manipulação direta, permitindo aos usuários interagirem diretamente
+            com os objetos na tela, em vez de dependerem de comandos textuais.
+            Essa abordagem intuitiva e visual tornou-se fundamental na
+            experiência do usuário moderna.
+          </p>
+          <h3>Boxe - Manipulação direta</h3>
+          <p>
+            A manipulação direta (DM) é uma abordagem de interação na qual
+            objetos gráficos são manipulados diretamente por meio de um
+            <em>dispositivo apontador</em>, como mouse ou touchscreen.
+            Pioneirizada por Ivan Sutherland no Sketchpad e concebida para uso
+            generalizado por Alan Kay, da Xerox PARC, o termo foi cunhado por
+            Ben Shneiderman em 1982, descrevendo uma interface com
+            representações contínuas de objetos, ações físicas simples e
+            operações rápidas e reversíveis.
+          </p>
+          <p>
+            Com ampla implementação em sistemas como Xerox Star, Apple Lisa e
+            Macintosh, a manipulação direta simplificou a interação do usuário,
+            eliminando comandos complexos e oferecendo feedback imediato.
+            Presente em dispositivos contemporâneos, de smartphones a tablets,
+            essa abordagem continua a moldar a interação tecnológica, tornando-a
+            mais acessível e intuitiva para usuários de todos os níveis de
+            habilidade.
+          </p>
+          <h3>Janelas</h3>
+          <p>
+            Janelas dividem a tela de uma estação de trabalho em áreas
+            independentes de entrada e saída, permitindo que múltiplos processos
+            sejam visualizados simultaneamente. A mudança de foco ocorre quando
+            uma janela é selecionada com um dispositivo apontador, como um mouse
+            ou touchscreen.
+          </p>
+          <p>
+            Enquanto os primeiros sistemas tinham janelas lado a lado, janelas
+            sobrepostas foram sugeridas por Alan Kay da Xerox PARC. Sistemas com
+            janelas existem em uma variedade de formas, mas em grande parte são
+            variações sobre o mesmo tema básico. O Microsoft Windows domina o
+            mercado de computadores pessoais e, por sua vez, existe em uma
+            variedade de formas, embora elas estejam aparentemente convergindo
+            (pelo menos em termos de aparência) para o formato tipo XP.
+          </p>
+          <h3>Ícones</h3>
+          <p>
+            Ícones são utilizados para representar uma variedade de
+            <em>características e funções</em>, desde softwares até etiquetas de
+            roupas, e são amplamente reconhecidos como auxiliares na
+            identificação de recursos. Embora tenham surgido no Xerox Star e
+            tenham sido objeto de pesquisa nas décadas de 1980 e 1990, o
+            interesse por eles diminuiu desde então. Atualmente, seu design é em
+            grande parte arbitrário, baseando-se em três principais tipos de
+            representação: metáfora, mapeamento direto e convenção.
+          </p>
+          <p>
+            Os principais aspectos de design discutidos em relação aos ícones
+            são a legibilidade e a interpretação. A legibilidade refere-se à
+            capacidade de diferenciar os ícones em diversas condições de
+            visualização, como iluminação fraca ou tamanho reduzido. Já a
+            interpretação diz respeito à clareza do significado transmitido
+            pelos ícones, destacando a importância de garantir que sejam
+            facilmente compreendidos pelos usuários. Soluções, como balões de
+            ajuda e dicas de ferramentas, são sugeridas para superar os desafios
+            de interpretação sem comprometer a economia de espaço na tela
+            proporcionada pelos ícones.
+          </p>
+          <img
+            src="./imgs/icones.png"
+            alt="Ilustrativa"
+            class="img-container"
+          />
+
+          <h3>Lista de Verificação de Ícones de Horton</h3>
+          <p>
+            William Horton (da William Horton Consulting Inc.) criou uma lista
+            de verificação detalhada para ajudar o designer de ícones a evitar
+            uma porção de erros comuns. Reproduzimos aqui seus cabeçalhos
+            principais juntamente de uma pergunta de amostra para cada questão.
+          </p>
+          <p>Ela inclui os seguintes critérios:</p>
+          <ul class="list-container">
+            <li>
+              <em>Compreensível:</em> Os ícones devem ser facilmente
+              compreendidos pelos usuários, transmitindo a mensagem ou ação que
+              eles representam.
+            </li>
+            <li>
+              <em>Familiar:</em> Os ícones devem se basear em elementos visuais
+              familiares aos usuários, como símbolos e metáforas comuns.
+            </li>
+            <li>
+              <em>Inequívocos:</em> Os ícones devem evitar ambiguidades,
+              garantindo que sua interpretação seja clara e unívoca.
+            </li>
+            <li>
+              <em>Memoráveis:</em> Os ícones devem ser facilmente memorizáveis
+              pelos usuários, para que possam ser reconhecidos e utilizados
+              posteriormente.
+            </li>
+            <li>
+              <em>Informativo:</em> Os ícones devem fornecer informações
+              relevantes sobre sua função ou propósito.
+            </li>
+            <li>
+              <em>Quantidade:</em> A quantidade de ícones em uma interface deve
+              ser adequada, evitando sobrecarregar os usuários com muitas
+              opções.
+            </li>
+            <li>
+              <em>Destino:</em> Os ícones devem ser adequados para o
+              público-alvo e contexto de uso, considerando as preferências e
+              necessidades dos usuários.
+            </li>
+            <li>
+              <em>Atraente:</em> Os ícones devem ser visualmente atraentes e
+              esteticamente agradáveis, para chamar a atenção dos usuários.
+            </li>
+            <li>
+              <em>Legível:</em> Os ícones devem ter uma forma clara e legível,
+              mesmo em tamanhos reduzidos.
+            </li>
+            <li>
+              <em>Compacto:</em> Os ícones devem ocupar um espaço visual mínimo,
+              permitindo a organização eficiente da interface.
+            </li>
+            <li>
+              <em>Coerente:</em> Os ícones devem seguir uma linguagem visual
+              consistente em todo o sistema ou produto, para criar uma
+              experiência coesa.
+            </li>
+            <li>
+              <em>Ampliável:</em> Os ícones devem ser escaláveis para diferentes
+              tamanhos, sem perder a clareza e legibilidade.
+            </li>
+          </ul>
+          <h3>Menu</h3>
+          <p>
+            Menus são elementos-chave em sistemas interativos, comuns em uma
+            variedade de dispositivos, desde computadores a telefones celulares
+            e quiosques de touchscreen. Eles oferecem uma maneira organizada e
+            acessível de apresentar uma lista de opções ou comandos aos
+            usuários. A estruturação em tópicos facilita a seleção e execução de
+            ações, sendo amplamente utilizada também em websites para navegação
+            eficiente. No entanto, a complexidade excessiva pode prejudicar a
+            usabilidade, tornando essencial equilibrar a organização com a
+            simplicidade na criação de menus.
+          </p>
+          <p>
+            Os menus podem ser organizados de forma hierárquica, permitindo a
+            inclusão de subníveis para facilitar a navegação em profundidade.
+            Essa abordagem, conhecida como menus em cascata, é comumente
+            encontrada em interfaces de usuário. Tais menus oferecem uma
+            estrutura visualmente clara, onde os submenus se desdobram conforme
+            o usuário navega pelas opções, proporcionando uma experiência
+            intuitiva de seleção de comando. Essa hierarquia é essencial para
+            lidar com uma grande variedade de opções sem comprometer a
+            usabilidade, garantindo que os usuários possam encontrar facilmente
+            o que estão procurando.
+          </p>
+          <img src="/imgs/menu.png" alt="Ilustrativa" class="img-container" />
+          <p>
+            O menu pop-up é uma forma comum de apresentar opções em interfaces
+            de usuário, distinto por não estar vinculado a uma barra de menu
+            fixa. Após a seleção de uma opção, o menu geralmente desaparece,
+            proporcionando uma interação rápida e temporária. Esses menus podem
+            ser contextualizados de acordo com a situação, oferecendo opções
+            específicas dependendo do contexto, como escolhas de arquivo ou
+            pasta, proporcionando uma experiência dinâmica e adaptável para os
+            usuários.
+          </p>
+          <h3>Uma Miscelânea de Widgets</h3>
+          <p>
+            As modernas interfaces gráficas do usuário apresentam uma variedade
+            de widgets, como botões, controles deslizantes e caixas de
+            verificação, que combinam diferentes elementos dos objetos básicos
+            WIMP. No entanto, criar uma GUI não garante automaticamente
+            usabilidade, pois é fácil criar interfaces inadequadas com as
+            ferramentas de desenvolvimento modernas. Para resolver esse
+            problema, foram criados guias de estilo que oferecem orientações
+            para os desenvolvedores de interfaces, visando garantir
+            consistência, usabilidade e diferenciação nos produtos.
+          </p>
+          <p>
+            Esses guias de estilo estão disponíveis para diferentes tipos de
+            sistemas com janelas e são frequentemente fornecidos por empresas de
+            software específicas, como a Microsoft, que oferece conselhos sobre
+            o agrupamento lógico de elementos e controles para melhorar a
+            organização e a compreensão da interface. Além disso, esses guias
+            também abordam detalhes específicos, como a consistência dos widgets
+            individuais, destacando a importância de uma interface coesa e
+            uniforme, como exemplificado pelo design do iPhone.
+          </p>
+          <h3>Botões de Rádio</h3>
+          <ul class="list-container">
+            <li>Permitem escolhas exclusivas entre opções.</li>
+            <li>
+              Funcionam como botões de rádio em um aparelho, onde apenas uma
+              opção pode ser selecionada por vez.
+            </li>
+            <li>
+              Exemplo: Escolher o tamanho do pincel no Photoshop (Padrão,
+              Preciso ou Tamanho do Pincel).
+            </li>
+          </ul>
+          <h3>Caixas de Verificação</h3>
+          <ul class="list-container">
+            <li>Permitem selecionar várias opções ao mesmo tempo.</li>
+            <li>Úteis para configurações não mutuamente exclusivas.</li>
+            <li>
+              Exemplo: Selecionar opções de filtragem em um e-mail (anexos,
+              promoções, spam).
+            </li>
+          </ul>
+          <h3>Barras de Ferramentas</h3>
+          <ul class="list-container">
+            <li>Coleção de botões agrupados por função.</li>
+            <li>
+              Representados por ícones com dicas de ferramenta ao passar o
+              mouse.
+            </li>
+            <li>Permitem acesso rápido a ferramentas comuns.</li>
+            <li>Configuráveis e ocultáveis para otimizar o espaço na tela.</li>
+            <li>
+              Exemplo: Barra de ferramentas do Windows com botões para
+              minimizar, maximizar e fechar janelas.
+            </li>
+          </ul>
+          <h3>Caixas de Listagem</h3>
+          <ul class="list-container">
+            <li>Listam arquivos, opções ou itens.</li>
+            <li>
+              Permitem diferentes visualizações (lista, ícones, miniaturas).
+            </li>
+            <li>Úteis para apresentar diversas opções de forma organizada.</li>
+            <li>
+              Exemplo: Caixa de seleção de arquivos para upload em um site.
+            </li>
+          </ul>
+          <h3>Controles Deslizantes</h3>
+          <ul class="list-container">
+            <li>Permitem ajustes análogos em uma escala.</li>
+            <li>Úteis para controlar valores como volume, brilho ou zoom.</li>
+            <li>Interface intuitiva para ajustar valores com precisão.</li>
+            <li>
+              Exemplo: Controle deslizante de volume em um reprodutor de música.
+            </li>
+          </ul>
+          <h3>Preenchimento de Formulário</h3>
+          <ul class="list-container">
+            <li>Interface popular para coletar informações estruturadas.</li>
+            <li>Utilizado em sites, aplicativos e softwares.</li>
+            <li>
+              Composto por campos de texto, menus suspensos, caixas de seleção e
+              outros widgets.
+            </li>
+            <li>
+              Útil para cadastro de usuários, compras online e outras tarefas
+              que exigem coleta de dados.
+            </li>
+            <li>Exemplo: Formulário de inscrição em um newsletter.</li>
+          </ul>
+          <h3>Wizard</h3>
+          <ul class="list-container">
+            <li>Estilo de interação que guia o usuário passo a passo.</li>
+            <li>
+              Divide tarefas complexas em etapas menores e fáceis de seguir.
+            </li>
+            <li>
+              Frequentemente usado para instalação de software ou configuração
+              de dispositivos.
+            </li>
+            <li>
+              Apresenta perguntas, listas de opções e outros tipos de widgets
+            </li>
+            <li>Exemplo: Wizard de instalação do Windows.</li>
+          </ul>
+          <h3>Alertas</h3>
+          <ul class="list-container">
+            <li>Informam o usuário sobre eventos importantes ou erros</li>
+            <li>
+              Podem ser discretos ou intrusivos, dependendo da urgência da
+              situação.
+            </li>
+            <li>
+              Úteis para chamar a atenção do usuário para informações
+              relevantes.
+            </li>
+            <li>Exemplo: Alerta de chegada de novo e-mail.</li>
+          </ul>
+        </section>
+        <section id="diretrizes">
+          <h2>Diretrizes de Design de Interface</h2>
+          <p>
+            Muitos sites oferecem valiosas diretrizes para o design de
+            interface, incluindo Apple® e Microsoft®, que têm suas próprias
+            diretrizes de design. Os ambientes de desenvolvimento também
+            garantem conformidade com esses padrões. No entanto, há muitas
+            questões específicas para diferentes contextos de design, como sites
+            e telefones celulares. Nesta seção, apresentamos diretrizes gerais
+            de design derivadas dos princípios psicológicos discutidos
+            anteriormente.
+          </p>
+          <h3>Diretrizes Extraídas da Percepção</h3>
+          <p>
+            O termo <em>Gestalt</em> foi usado para definir o estudo da
+            psicologia cognitiva que explora as leis da percepção a partir dos
+            dados que os indivíduos obtêm do mundo. Esses atalhos são conhecidos
+            como
+            <em>
+              princípios de percepção visual e mostram como o nosso cérebro cria
+              um padrão.
+            </em>
+          </p>
+          <p>
+            Essa teoria defende a ideia de que o todo é maior do que a soma de
+            suas partes. Isso significa que a forma como percebemos uma
+            composição visual não depende apenas dos elementos individuais, mas
+            também da relação entre esses elementos e como eles se encaixam para
+            criar uma imagem completa e significativa.
+          </p>
+          <h4>Os 7 princípios de Gestalt</h4>
+          <img
+            src="/imgs/gestalt.png"
+            alt="Ilustrativa"
+            class="img-container"
+          />
+          <h5>Princípio da proximidade</h5>
+          <p>
+            O princípio da proximidade afirma que coisas que estão próximas
+            parecem ser mais relacionadas entre si do que se estivessem
+            distantes. De uma maneira visual, essas situações estão presente no
+            dia a dia.
+          </p>
+          <p>
+            Assim, algumas das diversas aplicações desse princípio dentro de
+            User Interface Design se encontram na forma com que elementos
+            diferentes são posicionados de forma próxima para formar um grupo.
+          </p>
+          <img
+            src="/imgs/proximidade.png"
+            alt="Ilustrativa"
+            class="img-container"
+          />
+          <h5>Princípio da similaridade</h5>
+          <p>
+            O princípio de Gestalt da similaridade explora o fato de que
+            elementos parecidos são percebidos como parte do mesmo grupo e tendo
+            a mesma função.
+          </p>
+          <img
+            src="/imgs/similaridade.png"
+            alt="Ilustrativa"
+            class="img-container"
+          />
+          <h5>Princípio da continuidade</h5>
+          <p>
+            O princípio da continuidade afirma que elementos posicionados em uma
+            linha ou curva são percebidos como mais relacionados do que se não
+            estivessem dispostos desta forma.
+          </p>
+          <img
+            src="/imgs/continuidade.png"
+            alt="Ilustrativa"
+            class="img-container"
+          />
+          <h5>Princípio do fechamento</h5>
+          <p>
+            Esse princípio de Gestalt afirma que você utiliza de sua memória
+            para converter objetos complexos em formas simples e/ou já
+            conhecidas.
+          </p>
+          <p>
+            Você já se deparou alguma vez com uma imagem que não estava
+            totalmente preenchida, porém o seu consciente já havia contornado a
+            parte que faltava? Então, fechamento é isso. Ele faz automaticamente
+            com que nosso cérebro produza contornos que não existem.
+          </p>
+          <img
+            src="/imgs/fechamento.png"
+            alt="Ilustrativa"
+            class="img-container"
+          />
+          <h5>Princípio da figura-fundo</h5>
+          <p>
+            Este princípio de Gestalt afirma que nossa percepção instintivamente
+            percebe objetos como estando ou à frente ou ao fundo. Pois, como
+            seres humanos, não somos capazes de focar na frente e no fundo
+            simultaneamente, e precisamos escolher apenas um. Assim, em
+            interfaces, esse princípio é amplamente aplicado em navegações,
+            modais e caixas de diálogo.
+          </p>
+          <img
+            src="/imgs/figura-fundo.jpg"
+            alt="Ilustrativa"
+            class="img-container"
+          />
+          <h5>Princípio da região comum</h5>
+          <p>
+            O princípio da região comum têm relação com princípio da
+            proximidade, podendo ser até mesmo considerado um sub-princípio
+            deste primeiro. Dessa forma, esse principio afirma que quando
+            objetos são posicionados dentro da mesma região fechada estes são
+            percebidos como parte do mesmo grupo.
+          </p>
+          <p>
+            Este princípio é encontrado amplamente através da utilização de
+            cards, pois criam regiões isoladas de informação, mesmo quando
+            existem diversos cards próximos uns aos outros.
+          </p>
+          <img
+            src="/imgs/regiao-comum.png"
+            alt="Ilustrativa"
+            class="img-container"
+          />
+          <h5>Princípio do ponto focal</h5>
+          <p>
+            Por último em nossa lista, o princípio do ponto focal afirma que
+            qualquer elemento que se destacar visualmente vai capturar e prender
+            a atenção de quem está vendo.
+          </p>
+          <p>
+            Dessa forma, em interfaces, utilizamos este princípio ativamente
+            quando tratamos de hierarquia visual ou quando precisamos enfatizar
+            as ações principais que um usuário precisa tomar.
+          </p>
+          <img
+            src="/imgs/ponto-focal.jpg"
+            alt="Ilustrativa"
+            class="img-container"
+          />
+          <h3>Design para a Memória</h3>
+          <p>
+            O conceito de "Design para a Memória" refere-se à criação de
+            interfaces e sistemas que consideram as limitações e capacidades da
+            memória humana. Este enfoque visa facilitar a interação do usuário
+            com a tecnologia, minimizando a carga cognitiva e melhorando a
+            eficiência e a usabilidade. Ao compreender como as pessoas
+            processam, armazenam e recuperam informações, os designers podem
+            desenvolver interfaces que utilizam o reconhecimento em vez da
+            lembrança, fornecendo pistas visuais e estruturando informações de
+            maneira lógica para apoiar a memória de trabalho e a memória de
+            longo prazo.
+          </p>
+          <p>
+            No caso da interface widget da paleta de formatação do Microsoft
+            Word, a Microsoft aplicou os princípios do design para a memória
+            para criar uma ferramenta eficiente e intuitiva. Utilizando menus
+            suspensos para selecionar estilos, fontes e tamanhos, a interface
+            elimina a necessidade de lembrar detalhes específicos, permitindo
+            que os usuários reconheçam as opções através de pistas visuais. Isso
+            reduz a carga sobre a memória de trabalho e facilita o processo de
+            formatação de documentos.
+          </p>
+          <img src="/imgs/word.png" alt="Ilustrativa" class="img-container" />
+          <h3>Cores no design</h3>
+          <p>
+            A cor é fundamental para nós e desempenha um papel crucial em nossa
+            percepção e interpretação das coisas. Descrever alguém como "sem
+            cor" implica falta de personalidade e interesse. No design de
+            sistemas interativos, a utilização de cores é um desafio complexo.
+            Se fosse simples, a maioria dos eletrônicos domésticos não seriam
+            predominantemente pretos.
+          </p>
+          <p>
+            A escolha certa da paleta de cores consegue refletir toda a mensagem
+            e o propósito da marca ou de seu produto. As cores possuem um apelo
+            psicológico — mais detalhes adiante — e conseguem transmitir para o
+            usuário qual a personalidade da marca.
+          </p>
+          <p>
+            Dessa forma, o usuário pode tomar a decisão de usar o seu produto ou
+            não, baseado somente no esquema de cores apresentados a ele.
+            Portanto, a escolha da cor é algo a ser feito logo no começo do
+            projeto para que as decisões de design posteriores estejam coerentes
+            e de acordo com essa identidade.
+          </p>
+          <img
+            src="/imgs/psicologia-das-cores.jpg"
+            alt="Ilustrativa"
+            class="img-container"
+          />
+          <h3>Diretrizes para a prevenção de erros em design</h3>
+          <p>
+            As diretrizes de design extraídas dos princípios de Reason e Norman
+            visam minimizar erros humanos e promover a usabilidade. Primeiro, é
+            essencial usar o conhecimento do mundo e da mente para criar um bom
+            modelo conceitual do sistema, garantindo a consistência entre os
+            modelos do designer, do sistema e do usuário. Em segundo lugar,
+            deve-se simplificar a estrutura das tarefas para reduzir a carga nos
+            processos cognitivos como memória de trabalho, planejamento e
+            solução de problemas.
+          </p>
+          <p>
+            Além disso, é crucial tornar visíveis tanto os aspectos de execução
+            quanto de avaliação de uma ação. A visibilidade na execução ajuda o
+            usuário a entender o que é possível e como realizar tarefas,
+            enquanto a visibilidade na avaliação permite medir os efeitos de
+            suas ações. Por fim, explorar mapeamentos naturais e o poder das
+            restrições, sejam naturais ou artificiais, orienta os usuários para
+            a próxima ação ou decisão adequada, alinhando as ações do usuário
+            com suas intenções e expectativas.
+          </p>
+          <p>
+            Portanto, melhor do que mensagens dizendo que o usuário cometeu
+            algum erro é prevenir que o mesmo não cometa esse erro. Caixas de
+            confirmação, como as que aparecem quando você deleta um arquivo, são
+            um exemplo de como evitar erros.
+          </p>
+          <img
+            src="/imgs/alert-msg.png"
+            alt="Ilustrativa"
+            class="img-container"
+          />
+          <h3>Diretrizes para o design de mensagens de erro:</h3>
+          <ul class="list-container">
+            <li>
+              <em>Escolha cuidadosa de palavras e apresentação:</em> Evite
+              linguagem ameaçadora ou alarmante (como "erro fatal" ou "erro
+              catastrófico").
+            </li>
+            <li>
+              <em>Evite duplas negativas:</em> Elas podem causar ambiguidades.
+            </li>
+            <li>
+              <em>Use linguagem específica e construtiva:</em> Prefira mensagens
+              detalhadas como "por favor, digite seu nome" em vez de
+              generalizações como "dados inválidos".
+            </li>
+            <li>
+              <em>Atribua a culpa ao sistema:</em> Formule mensagens de erro de
+              forma que o sistema pareça responsável (por exemplo, "comando não
+              reconhecido" em vez de "comando ilegal").
+            </li>
+            <li>
+              <em>Evite o uso de letras maiúsculas:</em> Elas transmitem a
+              impressão de que você está gritando; use uma combinação de
+              maiúsculas e minúsculas.
+            </li>
+            <li>
+              <em>Atenção às técnicas de destaque:</em> Não abuse de mensagens
+              piscantes, cores fortes ou avisos cintilantes.
+            </li>
+            <li>
+              <em>Limite o número de tamanhos de fonte:</em> Use no máximo
+              quatro tamanhos diferentes por tela.
+            </li>
+            <li>
+              <em>Moderação no uso de áudio e vídeo:</em> Evite o uso excessivo
+              desses elementos.
+            </li>
+            <li>
+              <em>Uso apropriado de cores:</em> Utilize cores que atendam às
+              expectativas culturais (por exemplo, vermelho para perigo e verde
+              para segurança).
+            </li>
+            <img
+              src="/imgs/error.png"
+              alt="Ilustrativa"
+              class="img-container"
+            />
+          </ul>
+        </section>
+        <section id="visualizacao">
+          <h2>Visualização de Dados</h2>
+          <p>
+            Os designers de interação devem não só criar telas e widgets para a
+            interação, mas também esquematizar grandes quantidades de dados e
+            informações. Após estruturar e organizar a informação de forma
+            eficaz, é crucial fornecer métodos para que os usuários possam
+            interagir com esses dados. As ferramentas e técnicas de navegação
+            influenciam significativamente as inferências que os usuários podem
+            fazer e afetam a experiência geral de interação com a informação.
+          </p>
+          <h3>Design de Informação</h3>
+          <p>
+            O design de informação refere-se, essencialmente, a fazer sentido, a
+            como apresentar dados (frequentemente em grandes quantidades) de uma
+            maneira que as pessoas possam facilmente entendê-los e usá-los.
+            Designers de informação precisam entender as características das
+            diferentes mídias que estão sendo usadas para apresentar os dados e
+            como o meio afeta a forma como as pessoas se movimentam através das
+            estruturas.
+          </p>
+          <p>Exemplos de design de informação na vida cotidiana</p>
+          <ul class="list-container">
+            <li>Receitas</li>
+            <li>Manuais de instrução</li>
+            <li>Guias de navegação</li>
+            <li>Sites de comércio eletrônico e infosites</li>
+            <li>Vídeos explicativos</li>
+            <li>Relatórios de análise e pesquisa</li>
+            <li>Sinalização de orientação</li>
+            <li>Explicações de exposições de museus</li>
+            <li>Infográficos de como fazer</li>
+            <li>Legendas em sua série favorita da Netflix</li>
+          </ul>
+          <p>
+            O design de informação bem-sucedido é uma habilidade extremamente
+            importante para designers gráficos, designers de UI/UX, designers de
+            web, profissionais de marketing e empresas dominarem.
+          </p>
+          <p>
+            Ele sustenta a capacidade de comunicar mensagens-chave de forma
+            abrangente e eficaz. Pode reduzir o atrito e a frustração, desde
+            tarefas pequenas e simples até a entrega de notícias impactantes e
+            profundas.
+          </p>
+          <img
+            src="/imgs/design-info.jpg"
+            alt="Ilustrativa"
+            class="img-container"
+          />
+          <h3>Design de Interação</h3>
+          <p>
+            O Design de Interação é uma área da TI — e também do design —,
+            responsável por estudar, planejar e aplicar pontos de interatividade
+            em sistemas digitais e físicos, visando otimizar a relação entre o
+            usuário e o produto. Também é conhecido como interaction design, ou
+            IxD design.
+          </p>
+          <p>
+            A ideia é que as pessoas tenham contato com os produtos digitais de
+            forma simples, intuitiva e objetiva. Para isso, o designer de
+            interação procura formas de prever como as pessoas vão interagir com
+            o sistema que ele está projetando.
+          </p>
+          <p>
+            Em casos práticos, falando em projetos de grande porte, o Design de
+            Interação fica responsável por criar wireframes, mockups ou
+            protótipos de sites, enquanto os outros profissionais são
+            responsáveis por fazer o planejamento geral e criar a estrutura.
+          </p>
+          <p>
+            Os wireframes são uma representação gráfica da disposição dos itens
+            no sistema. Como é apenas um rascunho, não existe necessariamente o
+            compromisso de eles se parecerem com a versão final do produto.
+          </p>
+          <p>
+            Na verdade, são usados para definir os conceitos que precisam estar
+            inseridos no design do projeto e não para mostrar como ficará o
+            design final.
+          </p>
+          <img
+            src="/imgs/wireframe.png"
+            alt="Ilustrativa"
+            class="img-container"
+          />
+          <p>
+            Já os mockups são versões mais realistas do projeto. É uma foto ou
+            imagem de como ficará o projeto depois de pronto.
+          </p>
+          <p>
+            Quanto aos protótipos, têm o mesmo objetivo dos mockups, com a
+            diferença de que são uma versão teste do projeto, no qual já pode
+            haver interações. Entretanto, nesse caso não há compromisso com a
+            verdade, ou seja, os dados usados não são reais. Muito pelo
+            contrário, a ideia é testar os limites do projeto.
+          </p>
+        </section>
+        <section id="conclusao">
+          <h2>Conclusão</h2>
+          <p>
+            O design de interfaces visuais é uma habilidade essencial para
+            designers de sistemas interativos. Além de considerar princípios
+            estéticos, os designers devem focar na compreensão e utilização
+            eficaz dos widgets disponíveis, visando uma interação globalmente
+            funcional.
+          </p>
+          <ul class="list-container">
+            <li>
+              Interfaces gráficas de usuário: Utilizam uma combinação de
+              características WIMP (Windows, Icons, Menus, Pointer) e outros
+              objetos gráficos como base de design.
+            </li>
+            <li>
+              Diretrizes de design: Baseiam-se em estudos de psicologia,
+              percepção e princípios de design gráfico.
+            </li>
+            <li>
+              Visualizações interativas: São fundamentais no design de
+              informação quando é necessário exibir grandes quantidades de
+              dados.
+            </li>
+          </ul>
+        </section>
+        <section id="referencias">
+          <h2>Referências</h2>
+          <p>
+            BENYON, David. Interação humano-computador. 2. ed. São Paulo:
+            Pearson, 2011. E-book. Disponível em:
+            https://plataforma.bvirtual.com.br. Acesso em: 24 maio 2024.
+          </p>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Lívia Gomes de Souza</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
